@@ -1,0 +1,10 @@
+$light-colors-black: #000;
+$light-colors-accent: #A18A68;
+$light-colors-gray: #D8D8D8;
+$light-colors-white: #fff;
+$light-colors-dark-gray: #707070;
+$ligth-colors-light-gray: #EFEFEF;
+
+@function calcFontSize($min, $max){
+    @return calc($min + $max * (100vw / 1440));
+}
