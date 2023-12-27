@@ -5,6 +5,6 @@ $light-colors-white: #fff;
 $light-colors-dark-gray: #707070;
 $ligth-colors-light-gray: #EFEFEF;
 
-@function calcFontSize($min, $max){
-    @return calc($min + $max * (100vw / 1440));
+@function calcFontSize($min, $difference){
+    @return calc($min + $difference * (100vw / 1440));
 }
