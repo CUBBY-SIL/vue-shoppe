@@ -1,0 +1,25 @@
+.container-gallery{
+    height: 50vh;
+    width: 100%;
+    display: grid; 
+    column-gap: 20px;
+    grid-template-areas: 
+      'thumb current-img current-img current-img current-img'
+      'thumb current-img current-img current-img current-img'
+      'thumb current-img current-img current-img current-img';
+}
+.mySwiper2{
+grid-area: current-img;
+}
+.mySwiper{
+grid-area: thumb;
+}
+
+@media(max-width: 565px){
+    .mySwiper{
+        display: none;
+    }
+    .container-gallery{
+        gap: 0;
+    }
+}
