@@ -1,5 +1,5 @@
 <template>
-    <app-popup-add-to-cart :showPopup="popupShow"></app-popup-add-to-cart>
+    <app-popup :showPopup="popupShow"></app-popup>
     <div class="preview-item">
         <div class="preview-item__img">
             <router-link :to="{name: 'product', params: {id: productId}}">
@@ -23,11 +23,11 @@
 
 <script>
 import { mapGetters, mapActions } from 'vuex';
-import AppPopupAddToCart from '../PopupAddToCart.vue'
+import AppPopup from '../Popup.vue'
 export default {
     name: 'PreviewItem',
     components:{
-        AppPopupAddToCart
+        AppPopup
     },
     props:{
         productTitle: {

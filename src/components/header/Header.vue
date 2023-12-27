@@ -12,10 +12,10 @@
                     <div class="tool-bar__icons">
                         <a><fa-icon :icon="['fas', 'magnifying-glass']"></fa-icon></a>
                     </div>
-                    <div>
+                    <div class="tool-bar__icons">
                         <a><fa-icon :icon="['fas', 'cart-shopping']"></fa-icon></a>
                     </div>
-                    <div >
+                    <div class="tool-bar__icons">
                         <a><fa-icon :icon="['fas', 'user']"></fa-icon></a>
                     </div>
                 </div>
@@ -28,7 +28,7 @@
                 />
                 </transition>
                 <div class="tool-bar">
-                    <div >
+                    <div class="tool-bar__icons">
                         <fa-icon :icon="['fas', 'cart-shopping']"></fa-icon>
                     </div>
                     <transition name="change" mode="out-in">
