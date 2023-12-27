@@ -34,7 +34,7 @@ button{
 input{
     all: unset;
     width: 100%;
-    border-bottom: 1px solid #D8D8D8;
+    border-bottom: 1px solid $light-colors-gray;
     padding-bottom: 10px;
     margin-bottom: 37px;
 }
@@ -48,3 +48,4 @@ svg{
 @import './preview-shop/preview-shop';
 @import './preview-shop/preview-item';
 @import './popup';
+@import './footer/footer';
