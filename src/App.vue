@@ -2,16 +2,19 @@
     <div class="layout">
       <app-header />
       <router-view />
+      <app-footer />
   </div>
 </template>
 
 <script>
 import AppHeader from './components/header/Header.vue'
+import AppFooter from './components/footer/Footer.vue'
 
 export default {
   name: 'App',
   components: {
     AppHeader,
+    AppFooter
   }
 }
 </script>
