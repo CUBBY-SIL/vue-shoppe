@@ -1,0 +1,27 @@
+.container-popup-on-add{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 71px;
+    width: calc(100% - 40px);
+    z-index: 99;
+    max-width: 1228px;
+    padding: 25px;
+    background-color: $ligth-colors-light-gray;
+    border-top: 1px solid $light-colors-accent;
+}
+.popup-text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+}
+.popup-link{
+    margin-left: auto;
+    text-transform: uppercase;
+    font-size: calcFontSize(12px, 4);
+    font-weight: 700;
+    color: $light-colors-accent;
+} 
+.active-popup{
+    top: 0px;
+}
