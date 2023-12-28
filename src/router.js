@@ -7,6 +7,7 @@ import AppCart from '@/components/pages/CartPage'
 import AppCheckout from '@/components/pages/CheckoutPage'
 import AppOrderConfirmation from '@/components/pages/OrderConfirmation'
 import AppAboutPage from '@/components/pages/AboutPage'
+import AppContactPage from '@/components/pages/ContactPage'
 
 const routes = [
     {
@@ -43,6 +44,11 @@ const routes = [
         name: 'about',
         path: '/our-story',
         component: AppAboutPage
+    },
+    {
+        name: 'contact',
+        path: '/contact-us',
+        component: AppContactPage
     },
 ]
 
