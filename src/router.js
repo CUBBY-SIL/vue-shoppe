@@ -4,6 +4,8 @@ import AppHomePage from './components/pages/HomePage'
 import AppProduct from '@/components/product/Product'
 import AppCatalog from '@/components/pages/Catalog'
 import AppCart from '@/components/pages/CartPage'
+import AppCheckout from '@/components/pages/CheckoutPage'
+
 
 const routes = [
     {
@@ -25,6 +27,11 @@ const routes = [
         name: 'cart',
         path: '/cart',
         component: AppCart
+    },
+    {
+        name: 'checkout',
+        path: '/order',
+        component: AppCheckout
     },
 ]
 
