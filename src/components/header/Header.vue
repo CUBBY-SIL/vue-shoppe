@@ -80,7 +80,7 @@ export default {
                 },
                 {
                     text: 'About',
-                    link: 'home'
+                    link: 'about'
                 },
                 {
                     text: 'Blog',
@@ -92,7 +92,7 @@ export default {
                 },
                 {
                     text: 'Contact',
-                    link: 'home'
+                    link: 'contact'
                 },
                 {
                     text: 'Login',
