@@ -5,7 +5,7 @@ import AppProduct from '@/components/product/Product'
 import AppCatalog from '@/components/pages/Catalog'
 import AppCart from '@/components/pages/CartPage'
 import AppCheckout from '@/components/pages/CheckoutPage'
-
+import AppOrderConfirmation from '@/components/pages/OrderConfirmation'
 
 const routes = [
     {
@@ -32,6 +32,11 @@ const routes = [
         name: 'checkout',
         path: '/order',
         component: AppCheckout
+    },
+    {
+        name: 'orderConfirmation',
+        path: '/order-confirm',
+        component: AppOrderConfirmation
     },
 ]
 
