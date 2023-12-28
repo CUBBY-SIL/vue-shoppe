@@ -1,7 +1,7 @@
 <template>
     <header class="header">
         <div>
-            <img alt="logo" src="../../assets/img/SHOPPE_logo.png">
+            <router-link :to="{name: 'home'}"><img alt="logo" src="../../assets/img/SHOPPE_logo.png"></router-link>
         </div>
         <nav class="navigation">
             <div class="container-menu-lg-screen">
@@ -66,7 +66,7 @@ export default {
                 },
                 {
                     text: 'Our Story',
-                    link: 'about'
+                    link: 'home'
                 }
             ],
             menuMobile:[
@@ -80,7 +80,7 @@ export default {
                 },
                 {
                     text: 'About',
-                    link: 'about'
+                    link: 'home'
                 },
                 {
                     text: 'Blog',
@@ -92,11 +92,11 @@ export default {
                 },
                 {
                     text: 'Contact',
-                    link: 'contact'
+                    link: 'home'
                 },
                 {
                     text: 'Login',
-                    link: 'authorization'
+                    link: 'home'
                 }
             ],
             show: false,
