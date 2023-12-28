@@ -12,9 +12,9 @@
                     <div class="tool-bar__icons">
                         <a><fa-icon :icon="['fas', 'magnifying-glass']"></fa-icon></a>
                     </div>
-                    <div class="tool-bar__icons">
-                        <a><fa-icon :icon="['fas', 'cart-shopping']"></fa-icon></a>
-                    </div>
+                    <router-link :to="{name: 'cart'}" class="tool-bar__icons">
+                        <fa-icon :icon="['fas', 'cart-shopping']"></fa-icon>
+                    </router-link>
                     <div class="tool-bar__icons">
                         <a><fa-icon :icon="['fas', 'user']"></fa-icon></a>
                     </div>
@@ -28,9 +28,9 @@
                 />
                 </transition>
                 <div class="tool-bar">
-                    <div class="tool-bar__icons">
+                    <router-link :to="{name: 'cart'}" class="tool-bar__icons">
                         <fa-icon :icon="['fas', 'cart-shopping']"></fa-icon>
-                    </div>
+                    </router-link>
                     <transition name="change" mode="out-in">
                         <div v-if="!show" @click="show = !show" class="tool-bar__icons">
                             <fa-icon :icon="['fas', 'bars']"></fa-icon>
