@@ -66,7 +66,7 @@ export default {
                 },
                 {
                     text: 'Our Story',
-                    link: 'home'
+                    link: 'about'
                 }
             ],
             menuMobile:[
