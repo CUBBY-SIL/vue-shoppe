@@ -8,6 +8,7 @@ import AppCheckout from '@/components/pages/CheckoutPage'
 import AppOrderConfirmation from '@/components/pages/OrderConfirmation'
 import AppAboutPage from '@/components/pages/AboutPage'
 import AppContactPage from '@/components/pages/ContactPage'
+import AppAuthorizationPage from '@/components/pages/AuthorizationPage'
 
 const routes = [
     {
@@ -49,6 +50,11 @@ const routes = [
         name: 'contact',
         path: '/contact-us',
         component: AppContactPage
+    },
+    {
+        name: 'authorization',
+        path: '/authorization',
+        component: AppAuthorizationPage
     },
 ]
 
