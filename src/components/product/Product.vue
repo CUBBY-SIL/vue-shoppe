@@ -50,8 +50,8 @@ import { mapActions, mapGetters } from 'vuex'
 import AppE404 from '../E404.vue'
 import AppProductGallery from './ProductGallery.vue'
 import AppPopup from '../Popup.vue'
-import AppBtnCounter from '../buttons/ButtonCounter.vue'
-import AppMainBtn from '../buttons/MainButton.vue'
+import AppBtnCounter from '../UI/ButtonCounter.vue'
+import AppMainBtn from '../UI/MainButton.vue'
 
 export default {
     components:{

@@ -112,7 +112,7 @@ export default {
 </script>
 
 <style>
-.info-order__details .btn-add-to-cart{
+.info-order__details .main-btn{
     background-color: #000;
     color: #fff;
 }

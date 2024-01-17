@@ -1,7 +1,7 @@
 <template>
     <ul class="navigation-list">
         <li v-for="item, i in menuList" :key="i">
-            <a href="#"> {{ item.text }}</a>
+            <router-link :to="{name: `${item.link}`}" @click="hideMenu()">{{item.text}}</router-link>
         </li>
     </ul>
 </template>
