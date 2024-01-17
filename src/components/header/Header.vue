@@ -15,9 +15,11 @@
                     <router-link :to="{name: 'cart'}" class="tool-bar__icons">
                         <fa-icon :icon="['fas', 'cart-shopping']"></fa-icon>
                     </router-link>
-                    <div class="tool-bar__icons">
-                        <a><fa-icon :icon="['fas', 'user']"></fa-icon></a>
-                    </div>
+                    <router-link :to="{name: 'authorization'}" class="tool-bar__icons">
+                        <div >
+                            <fa-icon :icon="['fas', 'user']"></fa-icon>
+                        </div>
+                    </router-link>
                 </div>
             </div> 
             <div class="container-menu-sm-screen">
@@ -96,7 +98,7 @@ export default {
                 },
                 {
                     text: 'Login',
-                    link: 'home'
+                    link: 'authorization'
                 }
             ],
             show: false,
