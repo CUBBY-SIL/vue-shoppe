@@ -8,7 +8,8 @@
 ![Vuex](https://img.shields.io/badge/Vuex-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
 ![Vue Router](https://img.shields.io/badge/Vue_Router-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
 
-## Описание проекта
+## Библиотеки
+![Swiper.js](https://img.shields.io/badge/Swiper.js-35495E?style=for-the-badge) - слайдеры
 
 1. Данные о товарах берутся c ресурса - https://dummyjson.com/ - Fake REST API.
 
