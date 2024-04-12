@@ -4,7 +4,11 @@
             <div class="popup-text">
                 The item added to your Shopping bag.
             </div>
-            <a href="#" class="popup-link">View all</a>
+            <router-link 
+                :to="{name: `cart`}" 
+                class="popup-link">
+                    View all
+            </router-link>
         </div>
     </transition>
 </template>

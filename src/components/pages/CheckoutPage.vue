@@ -111,9 +111,14 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .info-order__details .main-btn{
     background-color: #000;
     color: #fff;
+}
+.info-order__details .main-btn:disabled{
+    background-color: #313131;
+    color: #8a8a8a;
+    cursor: default;
 }
 </style>
