@@ -1,19 +1,48 @@
-# vue-shoppe
+# Проект: Интернет-магазин SHOPPE
 
-## Project setup
+## Технологии
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white)
+![SCSS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![Vue](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
+![Vuex](https://img.shields.io/badge/Vuex-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
+![Vue Router](https://img.shields.io/badge/Vue_Router-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
+
+## Библиотеки
+![Swiper.js](https://img.shields.io/badge/Swiper.js-35495E?style=for-the-badge) - слайдеры
+
+## Описание
+1. Данные о товарах берутся c ресурса - https://dummyjson.com/ - Fake REST API.
+
+2. Хранилище данных организовано с помощью бибилотеки Vuex.
+
+3. Для маршрутизации используется библиотека Vue Router.
+
+4. Реализована валидация полей формы оформления заказа.
+
+5. На основе библиотеки Swiper.js разработал галерею фото для товара.
+
+6. В процессе разработки применялась адаптивная и резиновая верстки - использованы flex, grid, медиа запросы, адаптивные размеры шрифта.
+
+Данный проект еще будет дорабатываться. На текущий момент реализованны страницы: главная, каталог, "о нас", "связаться", корзина, оформление заказа, подтверждение заказа.
+
+## Ссылки проекта
+Ссылка на проект для просмотра - http://d96357yh.beget.tech/
+
+## Установка проекта
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Компиляция для разработки
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Компиляция и минификация для продакшена
 ```
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Настройка конфигурации
+Смотрите: [Configuration Reference](https://cli.vuejs.org/config/).
