@@ -4,6 +4,7 @@ export default{
 	namespaced: true,
     state: {
 		items: [],
+		showCart: false,
 	},
 	getters: {
 		inCart: state => id => state.items.some( item => item.id == id),
@@ -16,7 +17,8 @@ export default{
 				return { ...product, cnt: item.cnt}
 			})
 		},
-		total: (state, getters) => getters.itemsDetailed.reduce((t, i) => t +i.price *i.cnt, 0)
+		total: (state, getters) => getters.itemsDetailed.reduce((t, i) => t +i.price *i.cnt, 0),
+		statusCart: state => state.showCart,
 	},
 	mutations: {
 		add(state, {id, count}){
@@ -31,6 +33,9 @@ export default{
 		setCnt(state, {id, cnt}){
 			let item = state.items.find(item => item.id == id)
 			item.cnt = cnt
+		},
+		setVisibility(state){
+			state.showCart = !state.showCart;
 		}
 	},
 	actions: {
@@ -54,5 +59,8 @@ export default{
 				commit('setCnt', {id, cnt: validCnt})
 			}
 		},
+		changeVisibility({commit}){
+			commit('setVisibility');
+		}
 	}
 }
