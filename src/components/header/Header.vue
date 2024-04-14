@@ -12,9 +12,9 @@
                     <div class="tool-bar__icons">
                         <a><fa-icon :icon="['fas', 'magnifying-glass']"></fa-icon></a>
                     </div>
-                    <router-link :to="{name: 'cart'}" class="tool-bar__icons">
+                    <div class="tool-bar__icons" :onClick="onClickCart">
                         <fa-icon :icon="['fas', 'cart-shopping']"></fa-icon>
-                    </router-link>
+                    </div>
                     <router-link :to="{name: 'authorization'}" class="tool-bar__icons">
                         <div >
                             <fa-icon :icon="['fas', 'user']"></fa-icon>
@@ -30,9 +30,9 @@
                 />
                 </transition>
                 <div class="tool-bar">
-                    <router-link :to="{name: 'cart'}" class="tool-bar__icons">
+                    <div class="tool-bar__icons" :onClick="onClickCart">
                         <fa-icon :icon="['fas', 'cart-shopping']"></fa-icon>
-                    </router-link>
+                    </div>
                     <transition name="change" mode="out-in">
                         <div v-if="!show" @click="show = !show" class="tool-bar__icons">
                             <fa-icon :icon="['fas', 'bars']"></fa-icon>
@@ -49,11 +49,18 @@
 
 <script>
 import AppNavigationBar from './NavigationBar.vue'
+import { mapActions } from 'vuex';
 
 export default {
     name: 'Header',
     components: {
         AppNavigationBar,
+    },
+    methods:{
+        ...mapActions('cart', ['changeVisibility']),
+        onClickCart(){
+            this.$store.dispatch('cart/changeVisibility')
+        }
     },
     data(){
         return{
@@ -125,7 +132,6 @@ export default {
 
 .fade-menu-enter-active{
     animation: menuIn 0.6s ease;
-    
 }
 .fade-menu-leave-active{
     animation: menuOut 0.6s ease; 
