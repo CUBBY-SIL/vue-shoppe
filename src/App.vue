@@ -2,6 +2,7 @@
     <div class="layout">
       <app-header />
       <router-view />
+      <app-preview-cart />
       <app-footer />
   </div>
 </template>
@@ -9,12 +10,14 @@
 <script>
 import AppHeader from './components/header/Header.vue'
 import AppFooter from './components/footer/Footer.vue'
+import AppPreviewCart from './components/cart/PreviewCart.vue'
 
 export default {
   name: 'App',
   components: {
     AppHeader,
-    AppFooter
+    AppFooter,
+    AppPreviewCart
   }
 }
 </script>
